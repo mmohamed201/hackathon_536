@@ -111,7 +111,7 @@
             Height: =Parent.Height
             LayoutHeight: =Parent.Height
             Order: =7
-            Text: =ThisItem.Image
+            Text: =ThisItem.'Has attachments'
             Width: =100
             X: =0
             Y: =0
@@ -125,7 +125,7 @@
             Height: =Parent.Height
             LayoutHeight: =Parent.Height
             Order: =8
-            Text: =ThisItem.Attachments
+            Text: =ThisItem.'Link to item'
             Width: =100
             X: =0
             Y: =0

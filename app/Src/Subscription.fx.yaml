@@ -18,16 +18,20 @@ Subscription As screen:
         ZIndex: =2
 
     Button1 As button:
-        Height: =146
-        Text: ="Subscribe"
-        Width: =248
-        X: =704
-        Y: =292
+        Height: =222
+        OnSelect: =Subscription_1.Run(User_email.Text)
+        Text: |-
+            ="Click To Subscribe
+            We will notify you if we received new KS submission"
+        Width: =717
+        X: =324
+        Y: =266
         ZIndex: =2
 
     User_email As text:
         Default: =Office365Users.UserProfileV2(User().Email).mail
         DisplayMode: =DisplayMode.Disabled
+        Visible: =false
         X: =76
         Y: =144
         ZIndex: =3
