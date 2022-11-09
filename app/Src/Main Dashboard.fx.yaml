@@ -60,7 +60,7 @@
             BorderColor: =RGBA(0, 121, 187, 1)
             BorderThickness: =2
             Fill: =RGBA(102, 182, 227, 1)
-            Image: ='MicrosoftTeams-image (6)'
+            Image: ='MicrosoftTeams-image (7)'
             ImagePosition: =ImagePosition.Stretch
             RadiusBottomLeft: =50
             RadiusBottomRight: =50
