@@ -32,6 +32,7 @@
 
     Button_Subscription As button:
         Height: =65
+        OnSelect: =Navigate(Subscription,ScreenTransition.CoverRight)
         Text: ="Subscription"
         Width: =234
         X: =945
