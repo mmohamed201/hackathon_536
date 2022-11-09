@@ -66,8 +66,9 @@
             RadiusBottomRight: =50
             RadiusTopLeft: =50
             RadiusTopRight: =50
-            Visible: |
-                =Office365Users.UserPhotoMetadata(User().Email).HasPhoto
+            Visible: |+
+                =true
+                
             X: =1250
             Y: =15
             ZIndex: =6
