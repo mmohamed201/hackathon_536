@@ -122,7 +122,8 @@
             )
             &&
             Navigate('Main Dashboard',ScreenTransition.UnCoverRight)
-        Text: ="Submit"
+        Size: =30
+        Text: ="Click To SUBMIT"
         Width: =791
         X: =535
         Y: =525
