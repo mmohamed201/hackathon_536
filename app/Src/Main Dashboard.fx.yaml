@@ -15,8 +15,8 @@
         OnSelect: =Navigate('List of Submission',ScreenTransition.CoverRight)
         Text: ="List of Submission"
         Width: =394
-        X: =593
-        Y: =180
+        X: =591
+        Y: =173
         ZIndex: =2
 
     Button_New_Submission As button:
@@ -31,15 +31,17 @@
         Y: =346
         ZIndex: =3
 
-    Button_Subscription As button:
+    Button1_1 As button:
         Fill: =RGBA(9, 33, 98, 1)
         Height: =75
-        OnSelect: =Navigate(Subscription,ScreenTransition.CoverRight)
-        Text: ="Subscription"
-        Width: =657
-        X: =593
-        Y: =523
-        ZIndex: =4
+        OnSelect: =Subscription_1.Run(User_email_1.Text) && Navigate(Subscribe_Success,ScreenTransition.CoverRight)
+        Text: |-
+            ="Click To Here Subscribe
+            We will notify you if we received new KS submission"
+        Width: =643
+        X: =591
+        Y: =537
+        ZIndex: =8
 
     "'User Profile' As group":
         Height: =5
@@ -85,4 +87,12 @@
             X: =1250
             Y: =15
             ZIndex: =7
+
+    User_email_1 As text:
+        Default: =Office365Users.UserProfileV2(User().Email).mail
+        DisplayMode: =DisplayMode.Disabled
+        Visible: =false
+        X: =1004
+        Y: =728
+        ZIndex: =9
 
