@@ -57,7 +57,7 @@
   },
   "FunctionParamsInvariantScripts": {},
   "FunctionParamsInvariantScriptsOnInstances": {},
-  "HeaderLastSavedDateTimeUTC": "11/09/2022 05:14:12",
+  "HeaderLastSavedDateTimeUTC": "11/09/2022 05:46:17",
   "IsLegacyComponentAllowGlobalScopeCase": false,
   "LocalConnectionIDReferences": {
     "1b792f8d-cf69-4af5-aadd-61baff891877": "\"/providers/microsoft.powerapps/apis/shared_office365users/connections/c46c9b6d3e9a43428546dd831fe51407\"",
@@ -125,7 +125,7 @@
     "Button_List_of_Submission": 5,
     "Button_New_Submission": 6,
     "Button_Subscription": 7,
-    "Button1": 44,
+    "Button1": 45,
     "Button3": 17,
     "Category_Column1": 39,
     "Date_End": 31,
@@ -136,7 +136,7 @@
     "File Upload_Column1": 37,
     "Icon1": 42,
     "Icon1_1": 23,
-    "Icon1_2": 45,
+    "Icon1_2": 46,
     "Icon2": 32,
     "Image_Column1": 40,
     "Input_Category": 13,
@@ -168,7 +168,7 @@
     "Ticket Reference_Column1": 36,
     "Title_Column1": 34,
     "User Profile": 1,
-    "User_email": 0,
+    "User_email": 44,
     "Welcome_Text": 4
   },
   "ResourcesJsonIndices": {
