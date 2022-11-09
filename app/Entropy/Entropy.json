@@ -57,16 +57,16 @@
   },
   "FunctionParamsInvariantScripts": {},
   "FunctionParamsInvariantScriptsOnInstances": {},
-  "HeaderLastSavedDateTimeUTC": "11/09/2022 05:36:25",
+  "HeaderLastSavedDateTimeUTC": "11/09/2022 06:01:21",
   "IsLegacyComponentAllowGlobalScopeCase": false,
   "LocalConnectionIDReferences": {
     "1b792f8d-cf69-4af5-aadd-61baff891877": "\"/providers/microsoft.powerapps/apis/shared_office365users/connections/ccdcf93a26fe4072b3e691b73838f7de\"",
     "3c3fa5a8-3993-433a-bf69-c70bad9a041f": "\"/providers/microsoft.powerapps/apis/shared_excelonlinebusiness/connections/c6a11d8837844622976f257caad8f9ea\"",
-    "4b6463f1-3763-415d-8fa5-80a61ec76925": "\"/providers/microsoft.powerapps/apis/shared_teams/connections/shared-teams-9915e896-3fbf-437c-92e7-1e2a963a3e0d\"",
-    "7341f2af-a075-4806-9d12-7301935093a1": "\"/providers/microsoft.powerapps/apis/shared_approvals/connections/shared-approvals-70b5657c-9c90-46cf-bfc9-5db4370a3c0a\"",
+    "4301770d-e3a2-441f-8b77-70186a9b5612": "\"/providers/microsoft.powerapps/apis/shared_approvals/connections/shared-approvals-70b5657c-9c90-46cf-bfc9-5db4370a3c0a\"",
+    "4ef52b37-e5d3-44af-9265-747865a9e96d": "\"/providers/microsoft.powerapps/apis/shared_teams/connections/shared-teams-9915e896-3fbf-437c-92e7-1e2a963a3e0d\"",
+    "70434337-8076-49f4-91ec-290b8dfa607d": "\"/providers/Microsoft.PowerApps/apis/shared_logicflows/connections/03C9B27389D8456CA5F9C1876605F8C5-007BC69F221AB2E0\"",
     "83899865-fc2b-4675-932a-5c28071618dc": "\"/providers/microsoft.powerapps/apis/shared_sharepointonline/connections/91d8290fddb3477b94c3965fd64b6dad\"",
-    "a21cf1f6-6742-45c8-8d6d-fb29482c0859": "\"/providers/microsoft.powerapps/apis/shared_logicflows/connections/34930be75bdc4966b09d950a082281c1\"",
-    "f7d09989-8dfc-41bc-bd22-8506ec5a53f8": "\"/providers/microsoft.powerapps/apis/shared_logicflows/connections/03c9b27389d8456ca5f9c1876605f8c5-007bc69f221ab2e0\""
+    "a21cf1f6-6742-45c8-8d6d-fb29482c0859": "\"/providers/microsoft.powerapps/apis/shared_logicflows/connections/34930be75bdc4966b09d950a082281c1\""
   },
   "LocalDatabaseReferencesAsEmpty": false,
   "LocalResourceFileNames": {
