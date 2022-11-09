@@ -38,6 +38,15 @@
         Y: =455
         ZIndex: =4
 
+    Button1_1 As button:
+        Height: =58
+        OnSelect: =Subscription_1.Run(User_email.Text)
+        Text: ="Subscribe"
+        Width: =234
+        X: =974
+        Y: =564
+        ZIndex: =8
+
     "'User Profile' As group":
         Height: =5
         Width: =5

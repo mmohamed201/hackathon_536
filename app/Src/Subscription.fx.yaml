@@ -18,15 +18,18 @@ Subscription As screen:
         ZIndex: =2
 
     Button1 As button:
+        Height: =146
         OnSelect: =Subscription_1.Run(User_email.Text)
         Text: ="Subscribe"
-        X: =476
-        Y: =316
+        Width: =248
+        X: =704
+        Y: =292
         ZIndex: =2
 
     User_email As text:
-        Default: ="Text input"
-        X: =316
-        Y: =163
+        Default: =Office365Users.UserProfileV2(User().Email).mail
+        DisplayMode: =DisplayMode.Disabled
+        X: =76
+        Y: =144
         ZIndex: =3
 
