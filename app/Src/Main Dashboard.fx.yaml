@@ -15,8 +15,8 @@
         OnSelect: =Navigate('List of Submission',ScreenTransition.CoverRight)
         Text: ="List of Submission"
         Width: =234
-        X: =167
-        Y: =455
+        X: =332
+        Y: =115
         ZIndex: =2
 
     Button_New_Submission As button:
@@ -26,8 +26,8 @@
             ="New Submission
             "
         Width: =234
-        X: =566
-        Y: =455
+        X: =332
+        Y: =252
         ZIndex: =3
 
     Button_Subscription As button:
@@ -35,8 +35,8 @@
         OnSelect: =Navigate(Subscription,ScreenTransition.CoverRight)
         Text: ="Subscription"
         Width: =234
-        X: =945
-        Y: =455
+        X: =332
+        Y: =472
         ZIndex: =4
 
     "'User Profile' As group":

@@ -17,30 +17,31 @@
         ZIndex: =5
 
     Input_Title As text:
-        Default: ="Text input"
-        Height: =70
-        HintText: ="Insert Title"
-        Width: =652
+        Default: =""
+        Height: =83
+        HintText: ="Insert Title Here"
+        Width: =1286
         X: =40
-        Y: =135
+        Y: =137
         ZIndex: =6
 
     Label1_1 As label:
         DisplayMode: =DisplayMode.Disabled
         FontWeight: =FontWeight.Bold
         Text: ="Email"
-        X: =428
-        Y: =550
+        X: =40
+        Y: =591
         ZIndex: =7
 
     Input_Email As text:
         Default: =Office365Users.UserProfileV2(User().Email).mail
         DisplayMode: =DisplayMode.Disabled
+        Height: =45
         HintText: ="Insert Email"
         Tooltip: ="Insert Email"
-        Width: =264
-        X: =428
-        Y: =590
+        Width: =398
+        X: =40
+        Y: =631
         ZIndex: =8
 
     Label1_2 As label:
@@ -65,17 +66,17 @@
     Input_Date As datepicker:
         DateTimeZone: =DateTimeZone.UTC
         DisplayMode: =DisplayMode.Disabled
-        Width: =320
-        X: =54
-        Y: =590
+        Width: =398
+        X: =40
+        Y: =519
         ZIndex: =11
 
     Label1_3 As label:
         DisplayMode: =DisplayMode.Disabled
         FontWeight: =FontWeight.Bold
         Text: ="Date(UTC)"
-        X: =54
-        Y: =540
+        X: =40
+        Y: =479
         ZIndex: =12
 
     Label1_4 As label:
@@ -88,7 +89,7 @@
 
     Input_File As attachments:
         BorderColor: =
-        Height: =303
+        Height: =165
         IsInDataCard: =true
         Items: =
         MaxAttachments: =1
@@ -97,9 +98,9 @@
         PaddingRight: =5
         PaddingTop: =5
         Tooltip: =false
-        Width: =595
-        X: =722
-        Y: =137
+        Width: =791
+        X: =535
+        Y: =275
         ZIndex: =16
 
     Button3 As button:
@@ -122,9 +123,9 @@
             &&
             Navigate('Main Dashboard',ScreenTransition.UnCoverRight)
         Text: ="Submit"
-        Width: =581
-        X: =722
-        Y: =479
+        Width: =791
+        X: =535
+        Y: =525
         ZIndex: =17
 
     Input_Category As dropdown:
@@ -134,25 +135,6 @@
         X: =40
         Y: =275
         ZIndex: =18
-
-    Label3 As label:
-        Text: |-
-            ="Date and Email will be removed later
-            "
-        Width: =330
-        X: =81
-        Y: =475
-        ZIndex: =19
-
-    Label3_1 As label:
-        DisplayMode: =DisplayMode.View
-        Height: =47
-        Text: |-
-            ="NEXT : might need add function to check submission query ()"
-        Width: =582
-        X: =74
-        Y: =656
-        ZIndex: =20
 
     Page_Title_1 As label:
         Align: =Align.Center
