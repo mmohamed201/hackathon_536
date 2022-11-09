@@ -41,7 +41,7 @@
     "DatasetName": "https://slb001.sharepoint.com/sites/hackathon_536",
     "EncodeDataset": true,
     "IsSampleData": false,
-    "IsWritable": true,
+    "IsWritable": false,
     "Name": "Hackathon 536",
     "Type": "ConnectedDataSourceInfo"
   }
