@@ -31,12 +31,20 @@
         Y: =455
         ZIndex: =5
 
-    "'User Info' As group":
+    Button1_2 As button:
+        Height: =65
+        Text: ="Subscription"
+        Width: =234
+        X: =974
+        Y: =455
+        ZIndex: =6
+
+    "'User Profile' As group":
         Height: =5
         Width: =5
         X: =40
         Y: =40
-        ZIndex: =5
+        ZIndex: =8
 
         Label4 As label:
             Align: =Align.Right
@@ -49,25 +57,29 @@
             Y: =29
             ZIndex: =2
 
-        Image2 As image:
+        Default_Picture As image:
             BorderColor: =RGBA(0, 121, 187, 1)
             BorderThickness: =2
             Fill: =RGBA(102, 182, 227, 1)
+            Image: ='MicrosoftTeams-image (6)'
+            ImagePosition: =ImagePosition.Stretch
+            RadiusBottomLeft: =50
+            RadiusBottomRight: =50
+            RadiusTopLeft: =50
+            RadiusTopRight: =50
+            Visible: |
+                =Office365Users.UserPhotoMetadata(User().Email).HasPhoto
+            X: =1250
+            Y: =15
+            ZIndex: =3
+
+        Profile_Picture As image:
             Image: =Office365Users.UserPhotoV2(User().Email)
-            ImagePosition: =ImagePosition.Fill
             RadiusBottomLeft: =50
             RadiusBottomRight: =50
             RadiusTopLeft: =50
             RadiusTopRight: =50
             X: =1250
             Y: =15
-            ZIndex: =3
-
-    Button1_2 As button:
-        Height: =65
-        Text: ="Subscription"
-        Width: =234
-        X: =974
-        Y: =455
-        ZIndex: =6
+            ZIndex: =7
 
