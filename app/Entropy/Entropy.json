@@ -5,9 +5,9 @@
     "Analyst_Column1": 14,
     "App": 1,
     "BG Image": 21,
-    "Button1": 24,
-    "Button1_1": 25,
-    "Button1_2": 26,
+    "Button_List_of_Submission": 24,
+    "Button_New_Submission": 25,
+    "Button_Subscription": 26,
     "Button3": 38,
     "Category_Column1": 17,
     "DataTable1": 12,
@@ -38,7 +38,6 @@
     "Label2": 29,
     "Label3": 37,
     "Label3_1": 43,
-    "Label4": 23,
     "List of Submission": 3,
     "Main Dashboard": 20,
     "New Submission": 28,
@@ -47,11 +46,12 @@
     "Subscription": 45,
     "Ticket Reference_Column1": 15,
     "Title_Column1": 13,
-    "User Profile": 48
+    "User Profile": 48,
+    "Welcome_Text": 23
   },
   "FunctionParamsInvariantScripts": {},
   "FunctionParamsInvariantScriptsOnInstances": {},
-  "HeaderLastSavedDateTimeUTC": "11/09/2022 04:14:15",
+  "HeaderLastSavedDateTimeUTC": "11/09/2022 04:17:56",
   "IsLegacyComponentAllowGlobalScopeCase": false,
   "LocalConnectionIDReferences": {
     "1b792f8d-cf69-4af5-aadd-61baff891877": "\"/providers/microsoft.powerapps/apis/shared_office365users/connections/ccdcf93a26fe4072b3e691b73838f7de\"",
@@ -88,8 +88,8 @@
   "OrderGroupControls": {
     "User Profile": {
       "Default_Picture": 2,
-      "Label4": 1,
-      "Profile_Picture": 0
+      "Profile_Picture": 0,
+      "Welcome_Text": 1
     }
   },
   "OrderPcfTemplate": {},
@@ -108,9 +108,9 @@
     "Analyst_Column1": 14,
     "App": 0,
     "BG Image": 20,
-    "Button1": 23,
-    "Button1_1": 24,
-    "Button1_2": 25,
+    "Button_List_of_Submission": 23,
+    "Button_New_Submission": 24,
+    "Button_Subscription": 25,
     "Button3": 37,
     "Category_Column1": 17,
     "DataTable1": 11,
@@ -141,7 +141,6 @@
     "Label2": 28,
     "Label3": 36,
     "Label3_1": 42,
-    "Label4": 22,
     "List of Submission": 2,
     "Main Dashboard": 19,
     "New Submission": 27,
@@ -150,7 +149,8 @@
     "Subscription": 44,
     "Ticket Reference_Column1": 15,
     "Title_Column1": 13,
-    "User Profile": 0
+    "User Profile": 0,
+    "Welcome_Text": 22
   },
   "ResourcesJsonIndices": {
     "Image-KA_SingleStageAcid_ABS_CU": 1,
