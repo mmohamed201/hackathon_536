@@ -103,7 +103,7 @@
         ZIndex: =16
 
     Button3 As button:
-        Height: =61
+        Height: =151
         OnSelect: |-
             =DaretoInnovateTeam536.Run(
                 Input_Title.Text,
@@ -122,9 +122,9 @@
             &&
             Navigate('Main Dashboard',ScreenTransition.UnCoverRight)
         Text: ="Submit"
-        Width: =595
+        Width: =581
         X: =722
-        Y: =508
+        Y: =479
         ZIndex: =17
 
     Input_Category As dropdown:
