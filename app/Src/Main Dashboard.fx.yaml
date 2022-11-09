@@ -45,6 +45,8 @@
 
         Welcome_Text As label:
             Align: =Align.Right
+            Color: =RGBA(230, 230, 230, 1)
+            FontWeight: =FontWeight.Semibold
             Height: =46
             Text: |-
                 ="Welcome 
@@ -72,6 +74,8 @@
             ZIndex: =4
 
         Profile_Picture As image:
+            BorderColor: =RGBA(0, 20, 220, 1)
+            BorderThickness: =2
             Image: =Office365Users.UserPhotoV2(User().Email)
             RadiusBottomLeft: =50
             RadiusBottomRight: =50
@@ -124,7 +128,7 @@
         Image2 As image:
             Image: ='Menu Bar'
             Width: =412
-            X: =104
+            X: =139
             Y: =244
             ZIndex: =12
 
@@ -134,7 +138,7 @@
             OnSelect: =Navigate('List of Submission',ScreenTransition.CoverRight)
             Text: ="Discover Knowledge"
             Width: =412
-            X: =96
+            X: =131
             Y: =248
             ZIndex: =15
 
@@ -148,7 +152,7 @@
         Image2_1 As image:
             Image: ='Menu Bar'
             Width: =412
-            X: =124
+            X: =159
             Y: =382
             ZIndex: =13
 
@@ -160,7 +164,7 @@
                 ="New Submission
                 "
             Width: =423
-            X: =117
+            X: =152
             Y: =388
             ZIndex: =16
 
@@ -174,7 +178,7 @@
         Image2_2 As image:
             Image: ='Menu Bar'
             Width: =412
-            X: =149
+            X: =184
             Y: =511
             ZIndex: =14
 
@@ -184,7 +188,7 @@
             OnSelect: =Subscription_1.Run(User_email_1.Text) && Navigate(Subscribe_Success,ScreenTransition.CoverRight)
             Text: ="Subscribe"
             Width: =412
-            X: =144
+            X: =179
             Y: =518
             ZIndex: =17
 
@@ -200,7 +204,7 @@
             Height: =45
             Icon: =Icon.Draw
             Width: =45
-            X: =619
+            X: =654
             Y: =405
             ZIndex: =18
 
@@ -210,7 +214,7 @@
             Height: =45
             Text: ="Make a new discovery? Share it so we can learn together"
             Width: =505
-            X: =674
+            X: =709
             Y: =405
             ZIndex: =19
 
@@ -226,7 +230,7 @@
             Height: =45
             Icon: =Icon.Message
             Width: =45
-            X: =646
+            X: =681
             Y: =537
             ZIndex: =20
 
@@ -236,7 +240,7 @@
             Height: =45
             Text: ="Don't miss out on update when we posted new lesson"
             Width: =505
-            X: =701
+            X: =736
             Y: =537
             ZIndex: =21
 
@@ -252,7 +256,7 @@
             Height: =45
             Icon: =Icon.DockCheckProperties
             Width: =45
-            X: =590
+            X: =625
             Y: =271
             ZIndex: =22
 
@@ -262,7 +266,7 @@
             Height: =45
             Text: ="Don't fall behind. Learn something new."
             Width: =505
-            X: =645
+            X: =680
             Y: =271
             ZIndex: =23
 
