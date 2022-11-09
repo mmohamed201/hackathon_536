@@ -26,20 +26,21 @@
         ZIndex: =6
 
     Label1_1 As label:
+        DisplayMode: =DisplayMode.Disabled
         FontWeight: =FontWeight.Bold
         Text: ="Email"
-        X: =438
-        Y: =548
+        X: =428
+        Y: =550
         ZIndex: =7
 
     Input_Email As text:
-        Default: =""
-        Height: =39
+        Default: =Office365Users.UserProfileV2(User().Email).mail
+        DisplayMode: =DisplayMode.Disabled
         HintText: ="Insert Email"
         Tooltip: ="Insert Email"
-        Width: =228
+        Width: =264
         X: =428
-        Y: =597
+        Y: =590
         ZIndex: =8
 
     Label1_2 As label:

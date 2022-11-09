@@ -85,12 +85,42 @@
       "iconUri": "https://connectoricons-prod.azureedge.net/releases/v1.0.1534/1.0.1534.2605/logicflows/icon.png",
       "id": "/providers/microsoft.powerapps/apis/shared_logicflows",
       "parameterHints": {
+        "1b792f8d-cf69-4af5-aadd-61baff891877": {
+          "value": "shared_office365users"
+        },
+        "3c3fa5a8-3993-433a-bf69-c70bad9a041f": {
+          "value": "shared_excelonlinebusiness"
+        },
+        "4301770d-e3a2-441f-8b77-70186a9b5612": {
+          "value": "shared_approvals"
+        },
+        "4ef52b37-e5d3-44af-9265-747865a9e96d": {
+          "value": "shared_teams"
+        },
+        "83899865-fc2b-4675-932a-5c28071618dc": {
+          "value": "shared_sharepointonline"
+        },
         "workflowEntityId": {},
         "workflowName": {
           "value": "03c9b273-89d8-456c-a5f9-c1876605f8c5"
         }
       },
       "parameterHintsV2": {
+        "shared_approvals": {
+          "value": "4301770d-e3a2-441f-8b77-70186a9b5612"
+        },
+        "shared_excelonlinebusiness": {
+          "value": "3c3fa5a8-3993-433a-bf69-c70bad9a041f"
+        },
+        "shared_office365users": {
+          "value": "1b792f8d-cf69-4af5-aadd-61baff891877"
+        },
+        "shared_sharepointonline": {
+          "value": "83899865-fc2b-4675-932a-5c28071618dc"
+        },
+        "shared_teams": {
+          "value": "4ef52b37-e5d3-44af-9265-747865a9e96d"
+        },
         "workflowEntityId": {},
         "workflowName": {
           "value": "03c9b273-89d8-456c-a5f9-c1876605f8c5"
@@ -169,12 +199,18 @@
       "iconUri": "https://connectoricons-prod.azureedge.net/releases/v1.0.1534/1.0.1534.2605/logicflows/icon.png",
       "id": "/providers/microsoft.powerapps/apis/shared_logicflows",
       "parameterHints": {
+        "3c3fa5a8-3993-433a-bf69-c70bad9a041f": {
+          "value": "shared_excelonlinebusiness"
+        },
         "workflowEntityId": {},
         "workflowName": {
           "value": "e3b015e6-9100-4e09-bbce-fb41d6992e9e"
         }
       },
       "parameterHintsV2": {
+        "shared_excelonlinebusiness": {
+          "value": "3c3fa5a8-3993-433a-bf69-c70bad9a041f"
+        },
         "workflowEntityId": {},
         "workflowName": {
           "value": "e3b015e6-9100-4e09-bbce-fb41d6992e9e"
