@@ -17,3 +17,16 @@ Subscription As screen:
         Width: =1366
         ZIndex: =2
 
+    Button1 As button:
+        OnSelect: =Subscription_1.Run(User_email.Text)
+        Text: ="Subscribe"
+        X: =476
+        Y: =316
+        ZIndex: =2
+
+    User_email As text:
+        Default: ="Text input"
+        X: =316
+        Y: =163
+        ZIndex: =3
+
