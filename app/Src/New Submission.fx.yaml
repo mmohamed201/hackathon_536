@@ -1,0 +1,163 @@
+"'New Submission' As screen.'tabletAutoLayout_SplitScreen_ver1.0'":
+    BackgroundImage: =
+    Fill: =RGBA(255, 255, 255, 1)
+    ImagePosition: =ImagePosition.Stretch
+
+    Label2 As label:
+        Color: =RGBA(56, 96, 178, 1)
+        FontWeight: =FontWeight.Bold
+        Height: =43
+        Size: =15
+        Text: ="New Lesson Learned Submission"
+        Width: =348
+        X: =40
+        Y: =40
+        ZIndex: =2
+
+    Icon1_1 As icon.BackArrow:
+        Icon: =Icon.BackArrow
+        OnSelect: =Navigate('Main Dashboard',ScreenTransition.UnCoverRight)
+        Y: =703
+        ZIndex: =3
+
+    Label1 As label:
+        FontWeight: =FontWeight.Bold
+        Text: ="Title"
+        X: =40
+        Y: =97
+        ZIndex: =5
+
+    Input_Title As text:
+        Default: ="Text input"
+        Height: =70
+        HintText: ="Insert Title"
+        Width: =652
+        X: =40
+        Y: =135
+        ZIndex: =6
+
+    Label1_1 As label:
+        FontWeight: =FontWeight.Bold
+        Text: ="Email"
+        X: =438
+        Y: =548
+        ZIndex: =7
+
+    Input_Email As text:
+        Default: =""
+        Height: =39
+        HintText: ="Insert Email"
+        Tooltip: ="Insert Email"
+        Width: =228
+        X: =428
+        Y: =597
+        ZIndex: =8
+
+    Label1_2 As label:
+        FontWeight: =FontWeight.Bold
+        Height: =47
+        Text: ="Ticket Reference"
+        Width: =218
+        X: =40
+        Y: =353
+        ZIndex: =9
+
+    Input_Ticket As text:
+        Default: =""
+        Height: =47
+        HintText: ="Insert Ticket Number"
+        Tooltip: ="Insert Email"
+        Width: =398
+        X: =40
+        Y: =393
+        ZIndex: =10
+
+    Input_Date As datepicker:
+        DateTimeZone: =DateTimeZone.UTC
+        DisplayMode: =DisplayMode.Disabled
+        Width: =320
+        X: =54
+        Y: =590
+        ZIndex: =11
+
+    Label1_3 As label:
+        DisplayMode: =DisplayMode.Disabled
+        FontWeight: =FontWeight.Bold
+        Text: ="Date(UTC)"
+        X: =54
+        Y: =540
+        ZIndex: =12
+
+    Label1_4 As label:
+        FontWeight: =FontWeight.Bold
+        Text: ="Category"
+        Width: =186
+        X: =40
+        Y: =235
+        ZIndex: =13
+
+    Input_File As attachments:
+        BorderColor: =
+        Height: =303
+        IsInDataCard: =true
+        Items: =
+        PaddingBottom: =5
+        PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
+        PaddingRight: =5
+        PaddingTop: =5
+        Tooltip: =false
+        Width: =595
+        X: =722
+        Y: =137
+        ZIndex: =16
+
+    Button3 As button:
+        Height: =61
+        OnSelect: |-
+            =DaretoInnovateTeam536.Run(
+                Input_Title.Text,
+                Input_Email.Text,
+                Input_Ticket.Text,
+                Text(
+                    Input_Date.SelectedDate,
+                    "[$-en-US]yyyy-mm-dd"
+                ),
+                Input_Category.SelectedText.Value,
+                {
+                    contentBytes: First(Input_File.Attachments).Value,
+                    name: First(Input_File.Attachments).Name
+                }
+            )
+        Text: ="Sumbit"
+        Width: =595
+        X: =722
+        Y: =508
+        ZIndex: =17
+
+    Input_Category As dropdown:
+        Height: =51
+        Items: =Distinct('Hackathon 536',Category)
+        Width: =398
+        X: =40
+        Y: =275
+        ZIndex: =18
+
+    Label3 As label:
+        Text: |-
+            ="Date and Email will be removed later
+            "
+        Width: =330
+        X: =81
+        Y: =475
+        ZIndex: =19
+
+    Label3_1 As label:
+        DisplayMode: =DisplayMode.View
+        Height: =47
+        Text: |-
+            ="NEXT : might need add function to check submission query ()"
+        Width: =582
+        X: =74
+        Y: =656
+        ZIndex: =20
+

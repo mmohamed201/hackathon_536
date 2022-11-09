@@ -1,0 +1,163 @@
+"'List of Submission' As screen.'tabletLayout_HeaderAndGallery_ver3.0'":
+    Fill: =RGBA(215, 223, 240, 1)
+
+    DataTable1 As dataTable.datatable:
+        BorderStyle: =BorderStyle.Solid
+        DisplayMode: =DisplayMode.Edit
+        Fill: =RGBA(0, 0, 0, 0)
+        Height: =500
+        Items: |-
+            =Filter(
+                'Dare to Innovate Team 536',
+                Category=Dropdown_Category.SelectedText.Value,
+                Analyst=Dropdown_Analyst.SelectedText.Value,
+                'Submission Date'>=Date_Start.SelectedDate,
+                'Submission Date'<=Date_End.SelectedDate
+            )
+        Width: =1366
+        X: =0
+        Y: =268
+        ZIndex: =1
+
+        Title_Column1 As dataTableColumn.textualColumn:
+            DisplayMode: =DisplayMode.Edit
+            FieldDisplayName: ="Title"
+            FieldName: ="Title"
+            FieldVariantName: ="textualColumn"
+            Height: =Parent.Height
+            LayoutHeight: =Parent.Height
+            Order: =1
+            Text: =ThisItem.Title
+            Width: =100
+            X: =0
+            Y: =0
+            ZIndex: =1
+
+        Analyst_Column1 As dataTableColumn.textualColumn:
+            DisplayMode: =DisplayMode.Edit
+            FieldDisplayName: ="Analyst"
+            FieldName: ="Analyst"
+            FieldVariantName: ="textualColumn"
+            Height: =Parent.Height
+            LayoutHeight: =Parent.Height
+            Order: =2
+            Text: =ThisItem.Analyst
+            Width: =100
+            X: =0
+            Y: =0
+            ZIndex: =2
+
+        "'Ticket Reference_Column1' As dataTableColumn.textualColumn":
+            DisplayMode: =DisplayMode.Edit
+            FieldDisplayName: ="Ticket Reference"
+            FieldName: ="TicketReference"
+            FieldVariantName: ="textualColumn"
+            Height: =Parent.Height
+            LayoutHeight: =Parent.Height
+            Order: =3
+            Text: =ThisItem.'Ticket Reference'
+            Width: =100
+            X: =0
+            Y: =0
+            ZIndex: =3
+
+        "'File Upload_Column1' As dataTableColumn.urlColumn":
+            DisplayMode: =DisplayMode.Edit
+            FieldDisplayName: ="File Upload"
+            FieldName: ="FileUpload"
+            FieldVariantName: ="urlColumn"
+            Height: =Parent.Height
+            LayoutHeight: =Parent.Height
+            Order: =4
+            Text: =ThisItem.'File Upload'
+            Width: =100
+            X: =0
+            Y: =0
+            ZIndex: =4
+
+        "'Submission Date_Column1' As dataTableColumn.textualColumn":
+            DisplayMode: =DisplayMode.Edit
+            FieldDisplayName: ="Submission Date"
+            FieldName: ="SubmissionDate"
+            FieldVariantName: ="textualColumn"
+            Height: =Parent.Height
+            LayoutHeight: =Parent.Height
+            Order: =5
+            Text: =ThisItem.'Submission Date'
+            Width: =100
+            X: =880
+            Y: =0
+            ZIndex: =5
+
+        Category_Column1 As dataTableColumn.textualColumn:
+            DisplayMode: =DisplayMode.Edit
+            FieldDisplayName: ="Category"
+            FieldName: ="Category"
+            FieldVariantName: ="textualColumn"
+            Height: =Parent.Height
+            LayoutHeight: =Parent.Height
+            Order: =6
+            Text: =ThisItem.Category
+            Width: =100
+            X: =0
+            Y: =0
+            ZIndex: =6
+
+    Dropdown_Category As dropdown:
+        Items: =Distinct('Hackathon 536',Category)
+        X: =44
+        Y: =76
+        ZIndex: =2
+
+    Label_Category As label:
+        Text: ="Category"
+        X: =44
+        Y: =36
+        ZIndex: =3
+
+    Dropdown_Analyst As dropdown:
+        Items: =Distinct(Filter('Hackathon 536', Category = Dropdown_Category.SelectedText.'data-ADB4D7A662F548B49FAC2B986E348A1BResult'),Analyst)
+        X: =434
+        Y: =76
+        ZIndex: =4
+
+    Label_Author As label:
+        Text: ="Author"
+        X: =434
+        Y: =36
+        ZIndex: =5
+
+    Icon1 As icon.BackArrow:
+        Icon: =Icon.BackArrow
+        OnSelect: =Navigate('Main Dashboard',ScreenTransition.UnCoverRight)
+        Y: =704
+        ZIndex: =6
+
+    Date_Start As datepicker:
+        Width: =156
+        X: =832
+        Y: =76
+        ZIndex: =7
+
+    Label_Author_1 As label:
+        Text: ="Submission Date"
+        Width: =180
+        X: =832
+        Y: =36
+        ZIndex: =8
+
+    Date_End As datepicker:
+        Height: =42
+        Width: =156
+        X: =1028
+        Y: =76
+        ZIndex: =9
+
+    Icon2 As icon.ArrowRight:
+        Height: =24
+        Icon: =Icon.ArrowRight
+        Width: =24
+        X: =996
+        Y: =84
+        ZIndex: =10
+

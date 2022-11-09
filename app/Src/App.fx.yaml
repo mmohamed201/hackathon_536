@@ -1,0 +1,6 @@
+App As appinfo:
+    BackEnabled: =false
+    OnStart: |
+        =Set(varUserEmail, User().Email);
+    StartScreen: =Filter('Dare to Innovate Team 536 - (Subs)',Subscriber.Email = User().Email )
+

@@ -1,0 +1,73 @@
+"'Main Dashboard' As screen":
+    Fill: =RGBA(230, 230, 230, 1)
+
+    "'BG Image' As image":
+        Height: =768
+        Image: =KA_SingleStageAcid_ABS_CU
+        ImagePosition: =ImagePosition.Fill
+        Transparency: =0.75
+        Visible: =false
+        Width: =1365
+        X: =1
+        ZIndex: =1
+
+    Button1 As button:
+        Height: =65
+        OnSelect: =Navigate('List of Submission',ScreenTransition.CoverRight)
+        Text: ="List of Submission"
+        Width: =234
+        X: =202
+        Y: =455
+        ZIndex: =4
+
+    Button1_1 As button:
+        Height: =65
+        OnSelect: =Navigate('New Submission',ScreenTransition.CoverRight)
+        Text: |-
+            ="New Submission
+            "
+        Width: =234
+        X: =566
+        Y: =455
+        ZIndex: =5
+
+    "'User Info' As group":
+        Height: =5
+        Width: =5
+        X: =40
+        Y: =40
+        ZIndex: =5
+
+        Label4 As label:
+            Align: =Align.Right
+            Height: =46
+            Text: |-
+                ="Welcome 
+                " & Office365Users.UserProfileV2(User().Email).displayName
+            Width: =347
+            X: =889
+            Y: =29
+            ZIndex: =2
+
+        Image2 As image:
+            BorderColor: =RGBA(0, 121, 187, 1)
+            BorderThickness: =2
+            Fill: =RGBA(102, 182, 227, 1)
+            Image: =Office365Users.UserPhotoV2(User().Email)
+            ImagePosition: =ImagePosition.Fill
+            RadiusBottomLeft: =50
+            RadiusBottomRight: =50
+            RadiusTopLeft: =50
+            RadiusTopRight: =50
+            X: =1250
+            Y: =15
+            ZIndex: =3
+
+    Button1_2 As button:
+        Height: =65
+        Text: ="Subscription"
+        Width: =234
+        X: =974
+        Y: =455
+        ZIndex: =6
+
