@@ -19,7 +19,6 @@ Subscription As screen:
 
     Button1 As button:
         Height: =146
-        OnSelect: =Subscription_1.Run(User_email.Text)
         Text: ="Subscribe"
         Width: =248
         X: =704
