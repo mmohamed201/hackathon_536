@@ -1,14 +1,14 @@
 "'List of Submission' As screen.'tabletLayout_HeaderAndGallery_ver3.0'":
     Fill: =RGBA(215, 223, 240, 1)
 
-    DataTable1 As dataTable.datatable:
+    Table_Submission_List As dataTable.datatable:
         BorderStyle: =BorderStyle.Solid
         DisplayMode: =DisplayMode.Edit
         Fill: =RGBA(0, 0, 0, 0)
         Height: =500
         Items: |-
             =Filter(
-                'Dare to Innovate Team 536',
+                'Hackathon 536',
                 Category=Dropdown_Category.SelectedText.Value,
                 Analyst=Dropdown_Analyst.SelectedText.Value,
                 'Submission Date'>=Date_Start.SelectedDate,
@@ -134,6 +134,7 @@
         ZIndex: =6
 
     Date_Start As datepicker:
+        DefaultDate: =Today()-100
         Width: =156
         X: =832
         Y: =76
