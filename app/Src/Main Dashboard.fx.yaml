@@ -7,36 +7,38 @@
         ImagePosition: =ImagePosition.Fill
         Transparency: =0.75
         Width: =1365
-        X: =1
         ZIndex: =1
 
     Button_List_of_Submission As button:
-        Height: =65
+        Fill: =RGBA(9, 33, 98, 1)
+        Height: =75
         OnSelect: =Navigate('List of Submission',ScreenTransition.CoverRight)
         Text: ="List of Submission"
-        Width: =234
-        X: =332
-        Y: =115
+        Width: =394
+        X: =593
+        Y: =180
         ZIndex: =2
 
     Button_New_Submission As button:
-        Height: =65
+        Fill: =RGBA(9, 33, 98, 1)
+        Height: =75
         OnSelect: =Navigate('New Submission',ScreenTransition.CoverRight)
         Text: |-
             ="New Submission
             "
-        Width: =234
-        X: =332
-        Y: =252
+        Width: =522
+        X: =591
+        Y: =346
         ZIndex: =3
 
     Button_Subscription As button:
-        Height: =65
+        Fill: =RGBA(9, 33, 98, 1)
+        Height: =75
         OnSelect: =Navigate(Subscription,ScreenTransition.CoverRight)
         Text: ="Subscription"
-        Width: =234
-        X: =332
-        Y: =472
+        Width: =657
+        X: =593
+        Y: =523
         ZIndex: =4
 
     "'User Profile' As group":
