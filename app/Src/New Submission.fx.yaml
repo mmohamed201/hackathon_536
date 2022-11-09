@@ -3,17 +3,6 @@
     Fill: =RGBA(255, 255, 255, 1)
     ImagePosition: =ImagePosition.Stretch
 
-    Label2 As label:
-        Color: =RGBA(56, 96, 178, 1)
-        FontWeight: =FontWeight.Bold
-        Height: =43
-        Size: =15
-        Text: ="New Lesson Learned Submission"
-        Width: =348
-        X: =40
-        Y: =40
-        ZIndex: =2
-
     Icon1_1 As icon.BackArrow:
         Icon: =Icon.BackArrow
         OnSelect: =Navigate('Main Dashboard',ScreenTransition.UnCoverRight)
@@ -163,4 +152,15 @@
         X: =74
         Y: =656
         ZIndex: =20
+
+    Page_Title_1 As label:
+        Align: =Align.Center
+        Color: =RGBA(255, 255, 255, 1)
+        Fill: =RGBA(0, 20, 220, 1)
+        FontWeight: =FontWeight.Bold
+        Height: =51
+        Size: =15
+        Text: ="New Lesson Learned Submission"
+        Width: =1366
+        ZIndex: =21
 

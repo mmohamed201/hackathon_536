@@ -6,3 +6,14 @@ Subscription As screen:
         Y: =704
         ZIndex: =1
 
+    Page_Title_3 As label:
+        Align: =Align.Center
+        Color: =RGBA(255, 255, 255, 1)
+        Fill: =RGBA(0, 20, 220, 1)
+        FontWeight: =FontWeight.Bold
+        Height: =51
+        Size: =15
+        Text: ="Subscription"
+        Width: =1366
+        ZIndex: =2
+

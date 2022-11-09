@@ -106,25 +106,25 @@
     Dropdown_Category As dropdown:
         Items: =Distinct('Hackathon 536',Category)
         X: =44
-        Y: =76
+        Y: =146
         ZIndex: =2
 
     Label_Category As label:
         Text: ="Category"
         X: =44
-        Y: =36
+        Y: =106
         ZIndex: =3
 
     Dropdown_Analyst As dropdown:
         Items: =Distinct(Filter('Hackathon 536', Category = Dropdown_Category.SelectedText.'data-ADB4D7A662F548B49FAC2B986E348A1BResult'),Analyst)
         X: =434
-        Y: =76
+        Y: =146
         ZIndex: =4
 
     Label_Author As label:
         Text: ="Author"
         X: =434
-        Y: =36
+        Y: =106
         ZIndex: =5
 
     Icon1 As icon.BackArrow:
@@ -137,21 +137,21 @@
         DefaultDate: =Today()-100
         Width: =156
         X: =832
-        Y: =76
+        Y: =146
         ZIndex: =7
 
     Label_Author_1 As label:
         Text: ="Submission Date"
         Width: =180
         X: =832
-        Y: =36
+        Y: =106
         ZIndex: =8
 
     Date_End As datepicker:
         Height: =42
         Width: =156
         X: =1028
-        Y: =76
+        Y: =146
         ZIndex: =9
 
     Icon2 As icon.ArrowRight:
@@ -159,6 +159,18 @@
         Icon: =Icon.ArrowRight
         Width: =24
         X: =996
-        Y: =84
+        Y: =154
         ZIndex: =10
+
+    Page_Title_2 As label:
+        Align: =Align.Center
+        Color: =RGBA(255, 255, 255, 1)
+        Fill: =RGBA(0, 20, 220, 1)
+        FontWeight: =FontWeight.Bold
+        Height: =51
+        Size: =15
+        Text: ="List of Submission"
+        Width: =1366
+        Y: =1
+        ZIndex: =11
 
