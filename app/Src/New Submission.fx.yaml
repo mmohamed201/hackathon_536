@@ -131,7 +131,7 @@
             )
             &&
             Navigate('Main Dashboard',ScreenTransition.UnCoverRight)
-        Text: ="Sumbit"
+        Text: ="Submit"
         Width: =595
         X: =722
         Y: =508

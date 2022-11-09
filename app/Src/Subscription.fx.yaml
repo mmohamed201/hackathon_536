@@ -6,3 +6,9 @@ Subscription As screen:
         Y: =704
         ZIndex: =1
 
+    Button1 As button:
+        Text: ="Subscribe"
+        X: =436
+        Y: =244
+        ZIndex: =2
+
