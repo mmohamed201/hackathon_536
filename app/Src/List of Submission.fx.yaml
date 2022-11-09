@@ -5,7 +5,7 @@
         BorderStyle: =BorderStyle.Solid
         DisplayMode: =DisplayMode.Edit
         Fill: =RGBA(0, 0, 0, 0)
-        Height: =500
+        Height: =483
         Items: |-
             =Filter(
                 'Hackathon 536',
@@ -16,7 +16,7 @@
             )
         Width: =1366
         X: =0
-        Y: =268
+        Y: =204
         ZIndex: =1
 
         Title_Column1 As dataTableColumn.textualColumn:

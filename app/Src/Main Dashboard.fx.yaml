@@ -13,7 +13,7 @@
         Fill: =RGBA(9, 33, 98, 1)
         Height: =75
         OnSelect: =Navigate('List of Submission',ScreenTransition.CoverRight)
-        Text: ="List of Submission"
+        Text: ="List of KS"
         Width: =394
         X: =591
         Y: =173
@@ -57,8 +57,8 @@
                 ="Welcome 
                 " & Office365Users.UserProfileV2(User().Email).displayName
             Width: =347
-            X: =889
-            Y: =29
+            X: =887
+            Y: =42
             ZIndex: =5
 
         Default_Picture As image:
@@ -95,4 +95,18 @@
         X: =1004
         Y: =728
         ZIndex: =9
+
+    Label2 As label:
+        Align: =Align.Right
+        DisabledColor: =RGBA(0, 0, 0, 1)
+        DisplayMode: =DisplayMode.Disabled
+        FontWeight: =FontWeight.Bold
+        Height: =265
+        Overflow: =Overflow.Scroll
+        Size: =15
+        Text: ="This is simplified version of knowledge sharing platfrom where user can submit and share their KS accross the team."
+        Width: =424
+        X: =96
+        Y: =173
+        ZIndex: =10
 
