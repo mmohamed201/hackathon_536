@@ -15,7 +15,7 @@
         OnSelect: =Navigate('List of Submission',ScreenTransition.CoverRight)
         Text: ="List of Submission"
         Width: =234
-        X: =202
+        X: =167
         Y: =455
         ZIndex: =2
 
@@ -34,7 +34,7 @@
         Height: =65
         Text: ="Subscription"
         Width: =234
-        X: =974
+        X: =945
         Y: =455
         ZIndex: =4
 
