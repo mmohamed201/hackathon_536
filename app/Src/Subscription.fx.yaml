@@ -19,7 +19,7 @@ Subscription As screen:
 
     Button1 As button:
         Height: =222
-        OnSelect: =Subscription_1.Run(User_email.Text)
+        OnSelect: =Subscription_1.Run(User_email.Text) && Navigate('Main Dashboard',ScreenTransition.UnCoverRight)
         Text: |-
             ="Click To Subscribe
             We will notify you if we received new KS submission"
