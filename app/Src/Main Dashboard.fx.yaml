@@ -60,14 +60,15 @@
             BorderColor: =RGBA(0, 121, 187, 1)
             BorderThickness: =2
             Fill: =RGBA(102, 182, 227, 1)
-            Image: ='MicrosoftTeams-image (6)'
+            Image: =SLB_Logo_Square
             ImagePosition: =ImagePosition.Stretch
             RadiusBottomLeft: =50
             RadiusBottomRight: =50
             RadiusTopLeft: =50
             RadiusTopRight: =50
-            Visible: |
-                =Office365Users.UserPhotoMetadata(User().Email).HasPhoto
+            Visible: |+
+                =true
+                
             X: =1250
             Y: =15
             ZIndex: =6
