@@ -586,6 +586,66 @@
             {
               "logicalLocations": [
                 {
+                  "fullyQualifiedName": "Subscribe_Success.Icon1_3.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "Subscribe_Success.Icon1_3.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "Subscribe_Success",
+                "type": "Subscribe_Success.Icon1_3"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 3
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Subscribe_Success.Icon1_3.TabIndex"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "Subscribe_Success.Icon1_3.TabIndex",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "TabIndex",
+                "module": "Subscribe_Success",
+                "type": "Subscribe_Success.Icon1_3"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
+          "ruleIndex": 4
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
                   "fullyQualifiedName": "Subscription.User_email.AccessibleLabel"
                 }
               ],
@@ -676,19 +736,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "Subscribe_Success.Icon1_3.AccessibleLabel"
+                  "fullyQualifiedName": "'New Submission'.Image1.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "Subscribe_Success.Icon1_3.AccessibleLabel",
+                  "fullyQualifiedName": "'New Submission'.Image1.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
-                "module": "Subscribe_Success",
-                "type": "Subscribe_Success.Icon1_3"
+                "module": "New Submission",
+                "type": "'New Submission'.Image1"
               }
             }
           ],
@@ -706,19 +766,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "Subscribe_Success.Icon1_3.TabIndex"
+                  "fullyQualifiedName": "'New Submission'.Image1.TabIndex"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "Subscribe_Success.Icon1_3.TabIndex",
+                  "fullyQualifiedName": "'New Submission'.Image1.TabIndex",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "TabIndex",
-                "module": "Subscribe_Success",
-                "type": "Subscribe_Success.Icon1_3"
+                "module": "New Submission",
+                "type": "'New Submission'.Image1"
               }
             }
           ],
@@ -760,6 +820,36 @@
           },
           "ruleId": "app-UnusedVariables",
           "ruleIndex": 5
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "App.KA_SingleStageAcid_ABS_CU"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "App.KA_SingleStageAcid_ABS_CU",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "KA_SingleStageAcid_ABS_CU",
+                "module": "App",
+                "type": "App"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "app-UnusedMediaResources",
+          "ruleIndex": 6
         },
         {
           "locations": [

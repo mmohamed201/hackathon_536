@@ -34,6 +34,40 @@
     Icon1_3 As icon.BackArrow:
         Icon: =Icon.BackArrow
         OnSelect: =Navigate('Main Dashboard',ScreenTransition.UnCoverRight)
-        Y: =703
+        X: =15
+        Y: =689
         ZIndex: =4
+
+    Screen_Frame_4 As group:
+        Height: =5
+        Width: =5
+        X: =40
+        Y: =40
+        ZIndex: =9
+
+        Rectangle1_16 As rectangle:
+            Fill: =RGBA(0, 20, 220, 0.9)
+            Height: =768
+            Width: =15
+            ZIndex: =5
+
+        Rectangle1_19 As rectangle:
+            Fill: =RGBA(0, 20, 220, 0.9)
+            Height: =768
+            Width: =15
+            X: =1351
+            ZIndex: =6
+
+        Rectangle1_17 As rectangle:
+            Fill: =RGBA(0, 20, 220, 0.9)
+            Height: =15
+            Width: =1366
+            ZIndex: =7
+
+        Rectangle1_18 As rectangle:
+            Fill: =RGBA(0, 20, 220, 0.9)
+            Height: =15
+            Width: =1366
+            Y: =753
+            ZIndex: =8
 

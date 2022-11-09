@@ -3,45 +3,38 @@
 
     "'BG Image' As image":
         Height: =768
-        Image: =KA_SingleStageAcid_ABS_CU
+        Image: ='Tier 1_MaintenanceFacility_Nizwa_MENA_6954'
         ImagePosition: =ImagePosition.Fill
-        Transparency: =0.75
         Width: =1365
+        X: =1
         ZIndex: =1
 
-    Button_List_of_Submission As button:
-        Fill: =RGBA(9, 33, 98, 1)
-        Height: =75
-        OnSelect: =Navigate('List of Submission',ScreenTransition.CoverRight)
-        Text: ="List of KS"
-        Width: =394
-        X: =591
-        Y: =173
+    Rectangle2 As rectangle:
+        Fill: =RGBA(0, 0, 0, 0.5)
+        Height: =768
+        Width: =1366
         ZIndex: =2
 
-    Button_New_Submission As button:
-        Fill: =RGBA(9, 33, 98, 1)
-        Height: =75
-        OnSelect: =Navigate('New Submission',ScreenTransition.CoverRight)
-        Text: |-
-            ="New Submission
-            "
-        Width: =522
-        X: =591
-        Y: =346
-        ZIndex: =3
+    User_email_1 As text:
+        Default: =Office365Users.UserProfileV2(User().Email).mail
+        DisplayMode: =DisplayMode.Disabled
+        Visible: =false
+        X: =1004
+        Y: =728
+        ZIndex: =6
 
-    Button1_1 As button:
-        Fill: =RGBA(9, 33, 98, 1)
-        Height: =75
-        OnSelect: =Subscription_1.Run(User_email_1.Text) && Navigate(Subscribe_Success,ScreenTransition.CoverRight)
-        Text: |-
-            ="Click To Here Subscribe
-            We will notify you if we received new KS submission"
-        Width: =643
-        X: =591
-        Y: =537
-        ZIndex: =8
+    Label2 As label:
+        DisabledColor: =RGBA(0, 0, 0, 1)
+        DisplayMode: =DisplayMode.Disabled
+        FontWeight: =FontWeight.Bold
+        Height: =46
+        Overflow: =Overflow.Scroll
+        Size: =15
+        Text: ="Knowledge Sharing Platform"
+        Width: =424
+        X: =57
+        Y: =63
+        ZIndex: =7
 
     "'User Profile' As group":
         Height: =5
@@ -57,9 +50,9 @@
                 ="Welcome 
                 " & Office365Users.UserProfileV2(User().Email).displayName
             Width: =347
-            X: =887
-            Y: =42
-            ZIndex: =5
+            X: =859
+            Y: =63
+            ZIndex: =3
 
         Default_Picture As image:
             BorderColor: =RGBA(0, 121, 187, 1)
@@ -74,9 +67,9 @@
             Visible: |+
                 =true
                 
-            X: =1250
-            Y: =15
-            ZIndex: =6
+            X: =1222
+            Y: =36
+            ZIndex: =4
 
         Profile_Picture As image:
             Image: =Office365Users.UserPhotoV2(User().Email)
@@ -84,29 +77,192 @@
             RadiusBottomRight: =50
             RadiusTopLeft: =50
             RadiusTopRight: =50
-            X: =1250
-            Y: =15
-            ZIndex: =7
+            X: =1222
+            Y: =36
+            ZIndex: =5
 
-    User_email_1 As text:
-        Default: =Office365Users.UserProfileV2(User().Email).mail
-        DisplayMode: =DisplayMode.Disabled
-        Visible: =false
-        X: =1004
-        Y: =728
-        ZIndex: =9
+    Screen_Frame As group:
+        Height: =5
+        Width: =5
+        X: =40
+        Y: =40
+        ZIndex: =15
 
-    Label2 As label:
-        Align: =Align.Right
-        DisabledColor: =RGBA(0, 0, 0, 1)
-        DisplayMode: =DisplayMode.Disabled
-        FontWeight: =FontWeight.Bold
-        Height: =265
-        Overflow: =Overflow.Scroll
-        Size: =15
-        Text: ="This is simplified version of knowledge sharing platfrom where user can submit and share their KS accross the team."
-        Width: =424
-        X: =96
-        Y: =173
-        ZIndex: =10
+        Rectangle1 As rectangle:
+            Fill: =RGBA(0, 20, 220, 0.9)
+            Height: =768
+            Width: =15
+            ZIndex: =8
+
+        Rectangle1_1 As rectangle:
+            Fill: =RGBA(0, 20, 220, 0.9)
+            Height: =768
+            Width: =15
+            X: =1351
+            ZIndex: =9
+
+        Rectangle1_2 As rectangle:
+            Fill: =RGBA(0, 20, 220, 0.9)
+            Height: =15
+            Width: =1366
+            ZIndex: =10
+
+        Rectangle1_3 As rectangle:
+            Fill: =RGBA(0, 20, 220, 0.9)
+            Height: =15
+            Width: =1366
+            Y: =753
+            ZIndex: =11
+
+    "'Group Discover Knowledge' As group":
+        Height: =5
+        Width: =5
+        X: =40
+        Y: =40
+        ZIndex: =17
+
+        Image2 As image:
+            Image: ='Menu Bar'
+            Width: =412
+            X: =104
+            Y: =244
+            ZIndex: =12
+
+        Button_List_of_Submission As button:
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =75
+            OnSelect: =Navigate('List of Submission',ScreenTransition.CoverRight)
+            Text: ="Discover Knowledge"
+            Width: =412
+            X: =96
+            Y: =248
+            ZIndex: =15
+
+    "'Group New Submission' As group":
+        Height: =5
+        Width: =5
+        X: =40
+        Y: =40
+        ZIndex: =17
+
+        Image2_1 As image:
+            Image: ='Menu Bar'
+            Width: =412
+            X: =124
+            Y: =382
+            ZIndex: =13
+
+        Button_New_Submission As button:
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =75
+            OnSelect: =Navigate('New Submission',ScreenTransition.CoverRight)
+            Text: |-
+                ="New Submission
+                "
+            Width: =423
+            X: =117
+            Y: =388
+            ZIndex: =16
+
+    "'Group Subscirbe' As group":
+        Height: =5
+        Width: =5
+        X: =40
+        Y: =40
+        ZIndex: =17
+
+        Image2_2 As image:
+            Image: ='Menu Bar'
+            Width: =412
+            X: =149
+            Y: =511
+            ZIndex: =14
+
+        Button1_1 As button:
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =71
+            OnSelect: =Subscription_1.Run(User_email_1.Text) && Navigate(Subscribe_Success,ScreenTransition.CoverRight)
+            Text: ="Subscribe"
+            Width: =412
+            X: =144
+            Y: =518
+            ZIndex: =17
+
+    Group6 As group:
+        Height: =5
+        Width: =5
+        X: =40
+        Y: =40
+        ZIndex: =20
+
+        Icon4 As icon.Draw:
+            Color: =RGBA(255, 255, 255, 1)
+            Height: =45
+            Icon: =Icon.Draw
+            Width: =45
+            X: =619
+            Y: =405
+            ZIndex: =18
+
+        Label3 As label:
+            Color: =RGBA(255, 255, 255, 1)
+            FontWeight: =FontWeight.Semibold
+            Height: =45
+            Text: ="Make a new discovery? Share it so we can learn together"
+            Width: =505
+            X: =674
+            Y: =405
+            ZIndex: =19
+
+    Group6_1 As group:
+        Height: =5
+        Width: =5
+        X: =20
+        Y: =20
+        ZIndex: =22
+
+        Icon4_1 As icon.Draw:
+            Color: =RGBA(255, 255, 255, 1)
+            Height: =45
+            Icon: =Icon.Message
+            Width: =45
+            X: =646
+            Y: =537
+            ZIndex: =20
+
+        Label3_1 As label:
+            Color: =RGBA(255, 255, 255, 1)
+            FontWeight: =FontWeight.Semibold
+            Height: =45
+            Text: ="Don't miss out on update when we posted new lesson"
+            Width: =505
+            X: =701
+            Y: =537
+            ZIndex: =21
+
+    Group6_2 As group:
+        Height: =5
+        Width: =5
+        X: =20
+        Y: =20
+        ZIndex: =24
+
+        Icon4_2 As icon.Draw:
+            Color: =RGBA(255, 255, 255, 1)
+            Height: =45
+            Icon: =Icon.DockCheckProperties
+            Width: =45
+            X: =590
+            Y: =271
+            ZIndex: =22
+
+        Label3_2 As label:
+            Color: =RGBA(255, 255, 255, 1)
+            FontWeight: =FontWeight.Semibold
+            Height: =45
+            Text: ="Don't fall behind. Learn something new."
+            Width: =505
+            X: =645
+            Y: =271
+            ZIndex: =23
 

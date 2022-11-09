@@ -6,23 +6,24 @@
     Icon1_1 As icon.BackArrow:
         Icon: =Icon.BackArrow
         OnSelect: =Navigate('Main Dashboard',ScreenTransition.UnCoverRight)
-        Y: =703
+        X: =15
+        Y: =689
         ZIndex: =3
 
     Label1 As label:
         FontWeight: =FontWeight.Bold
         Text: ="Title"
         X: =40
-        Y: =97
+        Y: =111
         ZIndex: =5
 
     Input_Title As text:
         Default: =""
-        Height: =83
+        Height: =50
         HintText: ="Insert Title Here"
         Width: =1286
         X: =40
-        Y: =137
+        Y: =151
         ZIndex: =6
 
     Label1_1 As label:
@@ -30,18 +31,18 @@
         FontWeight: =FontWeight.Bold
         Text: ="Email"
         X: =40
-        Y: =591
+        Y: =570
         ZIndex: =7
 
     Input_Email As text:
         Default: =Office365Users.UserProfileV2(User().Email).mail
         DisplayMode: =DisplayMode.Disabled
-        Height: =45
+        Height: =50
         HintText: ="Insert Email"
         Tooltip: ="Insert Email"
-        Width: =398
+        Width: =520
         X: =40
-        Y: =631
+        Y: =610
         ZIndex: =8
 
     Label1_2 As label:
@@ -50,25 +51,26 @@
         Text: ="Ticket Reference"
         Width: =218
         X: =40
-        Y: =353
+        Y: =332
         ZIndex: =9
 
     Input_Ticket As text:
         Default: =""
-        Height: =47
+        Height: =50
         HintText: ="Insert Ticket Number"
         Tooltip: ="Insert Email"
-        Width: =398
+        Width: =520
         X: =40
-        Y: =393
+        Y: =372
         ZIndex: =10
 
     Input_Date As datepicker:
         DateTimeZone: =DateTimeZone.UTC
         DisplayMode: =DisplayMode.Disabled
-        Width: =398
+        Height: =50
+        Width: =520
         X: =40
-        Y: =519
+        Y: =498
         ZIndex: =11
 
     Label1_3 As label:
@@ -76,7 +78,7 @@
         FontWeight: =FontWeight.Bold
         Text: ="Date(UTC)"
         X: =40
-        Y: =479
+        Y: =458
         ZIndex: =12
 
     Label1_4 As label:
@@ -84,7 +86,7 @@
         Text: ="Category"
         Width: =186
         X: =40
-        Y: =235
+        Y: =214
         ZIndex: =13
 
     Input_File As attachments:
@@ -98,13 +100,33 @@
         PaddingRight: =5
         PaddingTop: =5
         Tooltip: =false
-        Width: =791
-        X: =535
-        Y: =275
+        Width: =689
+        X: =636
+        Y: =254
         ZIndex: =16
 
-    Button3 As button:
-        Height: =151
+    Input_Category As dropdown:
+        Height: =50
+        Items: =Distinct('Hackathon 536',Category)
+        Width: =520
+        X: =40
+        Y: =254
+        ZIndex: =18
+
+    Page_Title_1 As label:
+        Align: =Align.Center
+        Color: =RGBA(255, 255, 255, 1)
+        Fill: =RGBA(0, 20, 220, 1)
+        FontWeight: =FontWeight.Bold
+        Height: =51
+        Size: =15
+        Text: ="New Lesson Learned Submission"
+        Width: =1366
+        ZIndex: =21
+
+    Image1 As image:
+        Height: =97
+        Image: ='Submit Button'
         OnSelect: |-
             =DaretoInnovateTeam536.Run(
                 Input_Title.Text,
@@ -122,29 +144,41 @@
             )
             &&
             Navigate('Main Dashboard',ScreenTransition.UnCoverRight)
-        Size: =30
-        Text: ="Click To SUBMIT"
-        Width: =791
-        X: =535
-        Y: =525
-        ZIndex: =17
+        Width: =462
+        X: =749
+        Y: =586
+        ZIndex: =26
 
-    Input_Category As dropdown:
-        Height: =51
-        Items: =Distinct('Hackathon 536',Category)
-        Width: =398
+    Screen_Frame_1 As group:
+        Height: =5
+        Width: =5
         X: =40
-        Y: =275
-        ZIndex: =18
+        Y: =40
+        ZIndex: =26
 
-    Page_Title_1 As label:
-        Align: =Align.Center
-        Color: =RGBA(255, 255, 255, 1)
-        Fill: =RGBA(0, 20, 220, 1)
-        FontWeight: =FontWeight.Bold
-        Height: =51
-        Size: =15
-        Text: ="New Lesson Learned Submission"
-        Width: =1366
-        ZIndex: =21
+        Rectangle1_4 As rectangle:
+            Fill: =RGBA(0, 20, 220, 0.9)
+            Height: =768
+            Width: =15
+            ZIndex: =22
+
+        Rectangle1_7 As rectangle:
+            Fill: =RGBA(0, 20, 220, 0.9)
+            Height: =768
+            Width: =15
+            X: =1351
+            ZIndex: =23
+
+        Rectangle1_5 As rectangle:
+            Fill: =RGBA(0, 20, 220, 0.9)
+            Height: =15
+            Width: =1366
+            ZIndex: =24
+
+        Rectangle1_6 As rectangle:
+            Fill: =RGBA(0, 20, 220, 0.9)
+            Height: =15
+            Width: =1366
+            Y: =753
+            ZIndex: =25
 
