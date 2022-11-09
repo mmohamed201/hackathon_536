@@ -1,5 +1,5 @@
 "'Main Dashboard' As screen":
-    Fill: =RGBA(230, 230, 230, 1)
+    Fill: =RGBA(0, 0, 0, 0)
 
     "'BG Image' As image":
         Height: =768
