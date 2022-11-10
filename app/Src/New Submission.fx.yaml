@@ -55,7 +55,7 @@
         ZIndex: =9
 
     Input_Ticket As text:
-        Default: =""
+        Default: ="NA"
         Height: =50
         HintText: ="Insert Ticket Number"
         Tooltip: ="Insert Email"
