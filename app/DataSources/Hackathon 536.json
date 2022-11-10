@@ -3,7 +3,7 @@
     "ApiId": "/providers/microsoft.powerapps/apis/shared_sharepointonline",
     "CdpRevision": {
       "BaseUrl": "/",
-      "LastChangedTimeString": "2022-11-01T16:44:34.9730000Z",
+      "LastChangedTimeString": "2022-11-09T17:32:51.2080000Z",
       "RevisionNumber": 1
     },
     "ConnectedDataSourceInfoNameMapping": {
@@ -42,7 +42,7 @@
     "DatasetName": "https://slb001.sharepoint.com/sites/hackathon_536",
     "EncodeDataset": true,
     "IsSampleData": false,
-    "IsWritable": true,
+    "IsWritable": false,
     "Name": "Hackathon 536",
     "Type": "ConnectedDataSourceInfo"
   }
