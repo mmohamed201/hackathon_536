@@ -2,6 +2,9 @@
     Fill: =RGBA(0, 0, 0, 0)
 
     "'BG Image' As image":
+        DisabledBorderColor: =RGBA(0, 0, 0, 1)
+        DisabledFill: =RGBA(0, 0, 0, 0)
+        DisplayMode: =DisplayMode.View
         Height: =768
         Image: ='Tier 1_MaintenanceFacility_Nizwa_MENA_6954'
         ImagePosition: =ImagePosition.Fill
