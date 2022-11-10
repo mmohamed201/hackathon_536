@@ -16,9 +16,7 @@
       "Office365Users"
     ],
     "dependencies": {},
-    "dependents": [
-      "c5b64c72-31bb-4091-bfd3-9d9b0fd827ca"
-    ],
+    "dependents": [],
     "id": "1b792f8d-cf69-4af5-aadd-61baff891877"
   },
   "50c20063-7875-449b-819f-704e4dcfab3d": {
@@ -34,8 +32,7 @@
     "dataSources": [],
     "dependencies": {},
     "dependents": [
-      "cd31b93e-311e-48c6-9089-4dd116151887",
-      "c5b64c72-31bb-4091-bfd3-9d9b0fd827ca"
+      "945dc3c6-9333-4cd4-a6a7-d7f81c696ca8"
     ],
     "id": "50c20063-7875-449b-819f-704e4dcfab3d"
   },
@@ -80,9 +77,7 @@
       "Hackathon 536"
     ],
     "dependencies": {},
-    "dependents": [
-      "c5b64c72-31bb-4091-bfd3-9d9b0fd827ca"
-    ],
+    "dependents": [],
     "id": "83899865-fc2b-4675-932a-5c28071618dc"
   },
   "945dc3c6-9333-4cd4-a6a7-d7f81c696ca8": {
@@ -97,12 +92,24 @@
       "iconUri": "https://connectoricons-prod.azureedge.net/releases/v1.0.1534/1.0.1534.2605/logicflows/icon.png",
       "id": "/providers/microsoft.powerapps/apis/shared_logicflows",
       "parameterHints": {
+        "50c20063-7875-449b-819f-704e4dcfab3d": {
+          "value": "shared_excelonlinebusiness"
+        },
+        "9e25dd66-0d65-4e76-ba9a-ed8446574388": {
+          "value": "shared_teams"
+        },
         "workflowEntityId": {},
         "workflowName": {
           "value": "e3b015e6-9100-4e09-bbce-fb41d6992e9e"
         }
       },
       "parameterHintsV2": {
+        "shared_excelonlinebusiness": {
+          "value": "50c20063-7875-449b-819f-704e4dcfab3d"
+        },
+        "shared_teams": {
+          "value": "9e25dd66-0d65-4e76-ba9a-ed8446574388"
+        },
         "workflowEntityId": {},
         "workflowName": {
           "value": "e3b015e6-9100-4e09-bbce-fb41d6992e9e"
@@ -133,8 +140,7 @@
     "dataSources": [],
     "dependencies": {},
     "dependents": [
-      "cd31b93e-311e-48c6-9089-4dd116151887",
-      "c5b64c72-31bb-4091-bfd3-9d9b0fd827ca"
+      "945dc3c6-9333-4cd4-a6a7-d7f81c696ca8"
     ],
     "id": "9e25dd66-0d65-4e76-ba9a-ed8446574388"
   }
