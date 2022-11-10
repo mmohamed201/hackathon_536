@@ -16,7 +16,9 @@
       "Office365Users"
     ],
     "dependencies": {},
-    "dependents": [],
+    "dependents": [
+      "c5b64c72-31bb-4091-bfd3-9d9b0fd827ca"
+    ],
     "id": "1b792f8d-cf69-4af5-aadd-61baff891877"
   },
   "50c20063-7875-449b-819f-704e4dcfab3d": {
@@ -32,9 +34,27 @@
     "dataSources": [],
     "dependencies": {},
     "dependents": [
-      "945dc3c6-9333-4cd4-a6a7-d7f81c696ca8"
+      "cd31b93e-311e-48c6-9089-4dd116151887",
+      "c5b64c72-31bb-4091-bfd3-9d9b0fd827ca"
     ],
     "id": "50c20063-7875-449b-819f-704e4dcfab3d"
+  },
+  "697d0c4a-3c66-4e67-b219-072ad7150ebc": {
+    "connectionParameters": {
+      "sku": "Enterprise"
+    },
+    "connectionRef": {
+      "displayName": "Approvals",
+      "iconUri": "https://connectoricons-prod.azureedge.net/releases/v1.0.1599/1.0.1599.3017/approvals/icon.png",
+      "id": "/providers/microsoft.powerapps/apis/shared_approvals"
+    },
+    "datasets": {},
+    "dataSources": [],
+    "dependencies": {},
+    "dependents": [
+      "a6eea305-4e6c-4bea-b59f-d746a5fb7a65"
+    ],
+    "id": "697d0c4a-3c66-4e67-b219-072ad7150ebc"
   },
   "83899865-fc2b-4675-932a-5c28071618dc": {
     "connectionParameters": {
@@ -77,7 +97,9 @@
       "Hackathon 536"
     ],
     "dependencies": {},
-    "dependents": [],
+    "dependents": [
+      "c5b64c72-31bb-4091-bfd3-9d9b0fd827ca"
+    ],
     "id": "83899865-fc2b-4675-932a-5c28071618dc"
   },
   "945dc3c6-9333-4cd4-a6a7-d7f81c696ca8": {
@@ -128,8 +150,65 @@
     "dataSources": [],
     "dependencies": {},
     "dependents": [
-      "945dc3c6-9333-4cd4-a6a7-d7f81c696ca8"
+      "cd31b93e-311e-48c6-9089-4dd116151887",
+      "c5b64c72-31bb-4091-bfd3-9d9b0fd827ca"
     ],
     "id": "9e25dd66-0d65-4e76-ba9a-ed8446574388"
+  },
+  "a6eea305-4e6c-4bea-b59f-d746a5fb7a65": {
+    "connectionParameters": {
+      "workFlowCallbackUri": "https://prod-241.westeurope.logic.azure.com:443/workflows/bea1a6aa1f0045cf8b5baa6db52338a3/triggers/manual/paths/invoke?api-version=2016-06-01&sp=%2Ftriggers%2Fmanual%2Frun&sv=1.0&sig=jMJHNa05Spzu6_9S8pNkRUb-STJPvQyQpBopx5E2wbo",
+      "workflowEndpoint": "/subscriptions/5072fcc3-8341-442e-9b98-4b441017c969/resourceGroups/41ff26dc250f4b138981739be8610c21-4553457eaa3a4a458b9d8cafd22cff68/providers/Microsoft.Logic/workflows/03c9b273-89d8-456c-a5f9-c1876605f8c5",
+      "workflowName": "03c9b273-89d8-456c-a5f9-c1876605f8c5",
+      "workflowPath": "/subscriptions/5072fcc3-8341-442e-9b98-4b441017c969/resourceGroups/41ff26dc250f4b138981739be8610c21-4553457eaa3a4a458b9d8cafd22cff68/providers/Microsoft.Logic/workflows/03c9b273-89d8-456c-a5f9-c1876605f8c5"
+    },
+    "connectionRef": {
+      "displayName": "Logic flows",
+      "iconUri": "https://connectoricons-prod.azureedge.net/releases/v1.0.1534/1.0.1534.2605/logicflows/icon.png",
+      "id": "/providers/microsoft.powerapps/apis/shared_logicflows",
+      "parameterHints": {
+        "workflowEntityId": {},
+        "workflowName": {
+          "value": "03c9b273-89d8-456c-a5f9-c1876605f8c5"
+        }
+      },
+      "parameterHintsV2": {
+        "workflowEntityId": {},
+        "workflowName": {
+          "value": "03c9b273-89d8-456c-a5f9-c1876605f8c5"
+        }
+      }
+    },
+    "datasets": {},
+    "dataSources": [
+      "DaretoInnovateTeam536"
+    ],
+    "dependencies": {
+      "shared_approvals": "697d0c4a-3c66-4e67-b219-072ad7150ebc",
+      "shared_excelonlinebusiness": "50c20063-7875-449b-819f-704e4dcfab3d",
+      "shared_office365": "c5643461-aca6-4cb5-95c0-a79092ce2b85",
+      "shared_office365users": "1b792f8d-cf69-4af5-aadd-61baff891877",
+      "shared_sharepointonline": "83899865-fc2b-4675-932a-5c28071618dc",
+      "shared_teams": "9e25dd66-0d65-4e76-ba9a-ed8446574388"
+    },
+    "dependents": [],
+    "id": "a6eea305-4e6c-4bea-b59f-d746a5fb7a65"
+  },
+  "c5643461-aca6-4cb5-95c0-a79092ce2b85": {
+    "connectionParameters": {
+      "sku": "Enterprise"
+    },
+    "connectionRef": {
+      "displayName": "Office 365 Outlook",
+      "iconUri": "https://connectoricons-prod.azureedge.net/releases/v1.0.1599/1.0.1599.3017/office365/icon.png",
+      "id": "/providers/microsoft.powerapps/apis/shared_office365"
+    },
+    "datasets": {},
+    "dataSources": [],
+    "dependencies": {},
+    "dependents": [
+      "a6eea305-4e6c-4bea-b59f-d746a5fb7a65"
+    ],
+    "id": "c5643461-aca6-4cb5-95c0-a79092ce2b85"
   }
 }
