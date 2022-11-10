@@ -38,6 +38,13 @@
         Y: =689
         ZIndex: =4
 
+    Icon3 As icon.Cancel:
+        Icon: =Icon.Cancel
+        OnSelect: =Navigate('Main Dashboard',ScreenTransition.UnCoverRight)
+        X: =1287
+        Y: =15
+        ZIndex: =9
+
     Screen_Frame_4 As group:
         Height: =5
         Width: =5
