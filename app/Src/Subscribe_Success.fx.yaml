@@ -32,16 +32,18 @@
         ZIndex: =3
 
     Icon1_3 As icon.BackArrow:
+        Height: =85
         Icon: =Icon.BackArrow
         OnSelect: =Navigate('Main Dashboard',ScreenTransition.UnCoverRight)
+        Width: =85
         X: =15
-        Y: =689
+        Y: =668
         ZIndex: =4
 
     Icon3 As icon.Cancel:
         Icon: =Icon.Cancel
         OnSelect: =Navigate('Main Dashboard',ScreenTransition.UnCoverRight)
-        X: =1287
+        X: =1273
         Y: =15
         ZIndex: =9
 
@@ -54,12 +56,14 @@
 
         Rectangle1_16 As rectangle:
             Fill: =RGBA(0, 20, 220, 0.9)
+            FocusedBorderThickness: =4
             Height: =768
             Width: =15
             ZIndex: =5
 
         Rectangle1_19 As rectangle:
             Fill: =RGBA(0, 20, 220, 0.9)
+            FocusedBorderThickness: =4
             Height: =768
             Width: =15
             X: =1351
@@ -67,12 +71,14 @@
 
         Rectangle1_17 As rectangle:
             Fill: =RGBA(0, 20, 220, 0.9)
+            FocusedBorderThickness: =4
             Height: =15
             Width: =1366
             ZIndex: =7
 
         Rectangle1_18 As rectangle:
             Fill: =RGBA(0, 20, 220, 0.9)
+            FocusedBorderThickness: =4
             Height: =15
             Width: =1366
             Y: =753
