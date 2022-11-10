@@ -102,16 +102,14 @@
   },
   "FunctionParamsInvariantScripts": {},
   "FunctionParamsInvariantScriptsOnInstances": {},
-  "HeaderLastSavedDateTimeUTC": "11/10/2022 03:17:22",
+  "HeaderLastSavedDateTimeUTC": "11/10/2022 03:30:23",
   "IsLegacyComponentAllowGlobalScopeCase": false,
   "LocalConnectionIDReferences": {
     "1b792f8d-cf69-4af5-aadd-61baff891877": "\"/providers/microsoft.powerapps/apis/shared_office365users/connections/c46c9b6d3e9a43428546dd831fe51407\"",
-    "43cf455b-ee83-44fb-a794-7516c5115bb7": "\"/providers/microsoft.powerapps/apis/shared_approvals/connections/shared-approvals-db4a529c-aea3-4f5c-86d7-9b87e295426b\"",
     "50c20063-7875-449b-819f-704e4dcfab3d": "\"/providers/microsoft.powerapps/apis/shared_excelonlinebusiness/connections/shared-excelonlinebu-9d8e02d2-ed09-4a6f-b1fe-4c1b5740c88a\"",
     "83899865-fc2b-4675-932a-5c28071618dc": "\"/providers/microsoft.powerapps/apis/shared_sharepointonline/connections/ec7d2503f3bd4d5394291a90af4eb62e\"",
-    "9e25dd66-0d65-4e76-ba9a-ed8446574388": "\"/providers/microsoft.powerapps/apis/shared_teams/connections/b2957fd9e80f4d22a616f199caca82ae\"",
-    "c5b64c72-31bb-4091-bfd3-9d9b0fd827ca": "\"/providers/microsoft.powerapps/apis/shared_logicflows/connections/29f8cc9c92f1470cbb659ec20d2e6be3\"",
-    "cd31b93e-311e-48c6-9089-4dd116151887": "\"/providers/microsoft.powerapps/apis/shared_logicflows/connections/e3b015e691004e09bbcefb41d6992e9e-b9344542631ad1e0\""
+    "945dc3c6-9333-4cd4-a6a7-d7f81c696ca8": "\"/providers/Microsoft.PowerApps/apis/shared_logicflows/connections/E3B015E691004E09BBCEFB41D6992E9E-B9344542631AD1E0\"",
+    "9e25dd66-0d65-4e76-ba9a-ed8446574388": "\"/providers/microsoft.powerapps/apis/shared_teams/connections/b2957fd9e80f4d22a616f199caca82ae\""
   },
   "LocalDatabaseReferencesAsEmpty": false,
   "LocalResourceFileNames": {
@@ -135,19 +133,18 @@
   "OrderComponentMetadata": {},
   "OrderComponentTemplate": {},
   "OrderDataSource": {
-    "Category": 3,
-    "ColumnChartSample": 4,
-    "CustomGallerySample": 5,
-    "Dare to Innovate Team 536": 7,
-    "Dare to Innovate Team 536 - (Subs)": 6,
-    "DaretoInnovateTeam536": 0,
-    "DropDownSample": 8,
-    "Hackathon 536": 9,
-    "LegendSample": 10,
-    "LineChartSample": 11,
-    "Office365Users": 1,
-    "PieChartSample": 12,
-    "Subscription_1": 2
+    "Category": 2,
+    "ColumnChartSample": 3,
+    "CustomGallerySample": 4,
+    "Dare to Innovate Team 536": 6,
+    "Dare to Innovate Team 536 - (Subs)": 5,
+    "DropDownSample": 7,
+    "Hackathon 536": 8,
+    "LegendSample": 9,
+    "LineChartSample": 10,
+    "Office365Users": 0,
+    "PieChartSample": 11,
+    "Subscription_1": 1
   },
   "OrderGroupControls": {
     "Group Discover Knowledge": {
@@ -354,7 +351,7 @@
       "text": 5
     },
     "DeserializationLoadTime": 3.3958025,
-    "ErrorCount": 3
+    "ErrorCount": 4
   },
   "WasLocalDatabaseReferencesEmpty": false
 }
