@@ -3,8 +3,10 @@
 
     Table_Submission_List As dataTable.datatable:
         BorderStyle: =BorderStyle.Solid
+        BorderThickness: =0
         DisplayMode: =DisplayMode.Edit
         Fill: =RGBA(0, 0, 0, 0)
+        HeadingFontWeight: =FontWeight.Bold
         Height: =467
         Items: |-
             =Filter(
@@ -14,18 +16,21 @@
                 'Submission Date'>=Date_Start.SelectedDate,
                 'Submission Date'<=Date_End.SelectedDate
             )
-        Width: =1335
-        X: =16
+        Width: =1268
+        X: =44
         Y: =212
         ZIndex: =1
 
         Title_Column1 As dataTableColumn.textualColumn:
+            AutoWidth: =true
             DisplayMode: =DisplayMode.Edit
             FieldDisplayName: ="Title"
             FieldName: ="Title"
             FieldVariantName: ="textualColumn"
             Height: =Parent.Height
+            IsHyperlink: =true
             LayoutHeight: =Parent.Height
+            OnSelect: =false
             Order: =1
             Text: =ThisItem.Title
             Width: =100
@@ -40,7 +45,7 @@
             FieldVariantName: ="textualColumn"
             Height: =Parent.Height
             LayoutHeight: =Parent.Height
-            Order: =2
+            Order: =3
             Text: =ThisItem.Analyst
             Width: =100
             X: =0
@@ -54,7 +59,7 @@
             FieldVariantName: ="textualColumn"
             Height: =Parent.Height
             LayoutHeight: =Parent.Height
-            Order: =3
+            Order: =5
             Text: =ThisItem.'Ticket Reference'
             Width: =100
             X: =0
@@ -63,12 +68,13 @@
 
         "'File Upload_Column1' As dataTableColumn.urlColumn":
             DisplayMode: =DisplayMode.Edit
-            FieldDisplayName: ="File Upload"
+            FieldDisplayName: ="Link"
             FieldName: ="FileUpload"
             FieldVariantName: ="urlColumn"
             Height: =Parent.Height
+            IsHyperlink: =false
             LayoutHeight: =Parent.Height
-            Order: =4
+            Order: =6
             Text: =ThisItem.'File Upload'
             Width: =100
             X: =0
@@ -82,7 +88,7 @@
             FieldVariantName: ="textualColumn"
             Height: =Parent.Height
             LayoutHeight: =Parent.Height
-            Order: =5
+            Order: =4
             Text: =ThisItem.'Submission Date'
             Width: =100
             X: =0
@@ -96,7 +102,7 @@
             FieldVariantName: ="textualColumn"
             Height: =Parent.Height
             LayoutHeight: =Parent.Height
-            Order: =6
+            Order: =2
             Text: =ThisItem.Category
             Width: =100
             X: =0
