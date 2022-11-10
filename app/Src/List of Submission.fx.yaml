@@ -28,7 +28,7 @@
             FieldName: ="Title"
             FieldVariantName: ="textualColumn"
             Height: =Parent.Height
-            IsHyperlink: =true
+            IsHyperlink: =false
             LayoutHeight: =Parent.Height
             OnSelect: =false
             Order: =1
