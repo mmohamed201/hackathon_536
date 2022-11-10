@@ -24,14 +24,16 @@
         ZIndex: =6
 
     Label2 As label:
-        DisabledColor: =RGBA(0, 0, 0, 1)
+        Color: =RGBA(255, 255, 255, 1)
+        DisabledColor: =RGBA(255, 255, 255, 1)
         DisplayMode: =DisplayMode.Disabled
+        Fill: =RGBA(255, 255, 255, 1)
         FontWeight: =FontWeight.Bold
-        Height: =46
+        Height: =101
         Overflow: =Overflow.Scroll
-        Size: =15
+        Size: =40
         Text: ="Knowledge Sharing Platform"
-        Width: =424
+        Width: =914
         X: =57
         Y: =63
         ZIndex: =7
